@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 360px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #4a90e2;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .profile {
+            background: linear-gradient(to right, #4a90e2, #9b59b6);
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .profile div {
+            flex: 1;
+        }
+        .profile .assign-task {
+            background-color: #fff;
+            color: #4a90e2;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .announcement {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .announcement .date-time {
+            margin-bottom: 10px;
+        }
+        .announcement .button {
+            background-color: #f1c40f;
+            color: #000;
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .announcement .continue-work {
+            background-color: #f1c40f;
+            color: #0f010ab1;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">WELCOME</div>
+        <div class="profile">
+            <div>
+                <img src="data:image/jpeg;base64,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" alt="Profile Picture">
+            </div>
+            <div>
+                <div>Murad Naser</div>
+                <div>DESIGNATION</div>
+            </div>
+            <button class="assign-task">ASSIGN TASK</button>
+        </div>
+        <div class="announcement">
+            <div class="date-time">
+                <p> Announcement  From  Admin</p>
+                <div>DATE: 1.01.2024                   TIME: 10.30 AM</div>
+            
+            </div>
+            <button class="button">HAPPY TO INFORM YOU ALL</button>
+            <div class="date-time">
+                <div>DATE: 1.01.2024             TIME: 10.30 AM</div>
+                
+            </div>
+            <button class="button">HAPPY TO INFORM YOU ALL</button>
+            <button class="continue-work">CONTINUE WORK</button>
+        </div>
+    </div>
+
+</body>
+</html>
